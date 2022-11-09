@@ -1,0 +1,237 @@
+/* importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* normalize */
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    padding: 0;
+    margin: 0;
+}
+p,h1,h2,h3,button,li,i{
+    color: #FFFF;
+}
+
+/* HEADER AND NAV STYLES */
+header{
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+}
+
+nav.nav{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+nav li.nav-item{
+    padding: 0;
+    margin: 0 20px;
+    text-align: center;
+    font-size: 1.05em;
+    font-weight: 500;
+    cursor:pointer;
+}
+li.nav-item:hover{
+    line-height: 1.1;
+    font-weight: 600;
+    transition-duration: .35s;
+}
+
+/* HOME AND HOME INFO STYLES */
+div.home{
+    height: 100vh;
+    background-image: url('http://shieldprofessional.co.za/wp-content/uploads/2021/01/shield-professional-slider-bg-pads.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 80px;
+    z-index: -100;
+}
+div.home-info{
+    width: 100%;
+    max-width:1100px;
+    margin-top: 200px;
+}
+div.home-card{
+    max-width: 700px;
+    padding: 40px;
+}
+div.home-card h2{
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+div.home-card p{
+    font-weight: 600;
+}
+
+button.contact-btn{
+    background-color: transparent;
+    border: 2px solid #dc3545;
+    border-radius: 2px;
+    font-size: 1.1em;
+    font-weight: 700;
+    padding: 12px 25px;
+    width:fit-content;
+}
+button.contact-btn:hover{
+    background-color: #dc3545;
+    color: #FFFF;
+    transition-duration: .6s;
+}
+div.social-icons{
+    max-width: 600px;
+    margin-top:10%;
+    padding: 0 40px;
+}
+div.social-icons h3{
+    font-size: 1.2em;
+}
+div.social-icons i.fa-brands{
+    font-size: 2.1em;
+    margin: 0px 5px 5px 5px;
+    cursor: pointer;
+}
+div.social-icons i.fa-brands:hover{
+    transition: .5s;
+    color: #dc3545;
+}
+div.social-icons__container{
+    margin-left: 20px;
+}
+
+/* services section */
+div.services{
+    width: 100%;
+}
+div.services h4{
+    font-weight: 600;
+    padding: 20px 0px;
+    color: #ffff;
+
+}
+div.services-col{
+    padding: 30px 20px;
+    height: 320px;
+}
+button.button-services-red{
+    margin-top: 20px;
+}
+button.button-services-red:hover{
+    border: 2px solid #ffff;
+    background-color: #ffff;
+    color: #E53F29;
+    transition: .3s;
+}
+button.button-services-black:hover{
+    border: 2px solid #ffff;
+    background-color: #ffff;
+    color: grey;
+    transition: .3s;
+}
+div.services i.fa-screwdriver-wrench{
+    font-size: 2.5em;
+}
+div.services-img-1,div.services-img-2{
+    height: 320px;
+    background-size: cover;
+}
+div.services-img-1{
+    background-image: url('https://thehimalayantimes.com/uploads/imported_images/wp-content/uploads/2016/11/Car-service.jpg');
+}
+div.services-img-2{
+    background-image: url('https://latam-editorial.pxcrush.net/chileautos/general/editorial/157642-motor-aspirado-o-que-eu-preciso-saber-1000x640.jpg?width=825&height=550&pxc_method=crop');
+}
+/* Services details section */
+
+div.services__detail{
+    padding: 30px;
+    padding-top: 50px;
+}
+
+div.services div.services__detail-header{
+    padding: 30px;
+    max-width: 700px;
+    margin: 0 auto 60px auto;
+}
+
+div.services div.services__detail-icons{
+    max-width: 900px;
+    margin: 20px auto 100px auto;
+}
+div.services__detail-icon{
+    padding: 30px;
+    height: 200px;
+}
+div.services__detail-icons i{
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+div.services__detail-icons p{
+    color: #a9a9a9;
+}
+
+
+/* utilities */
+.bolder{
+    font-weight: 1000;
+}
+.bold{
+    font-weight: 600;
+}
+.bg-orange{
+    background-color: #E53F29;
+}
+.bg-grey{
+    background-color: #1E1E1E;
+}
+.grey-color{
+    color: #1E1E1E !important;
+}
+.orange-color{
+    color: #E53F29;
+}
+.red-color{
+    color:#dc3545;
+}
+button.button{
+    padding: 7px 20px;
+    border: 2px solid #ffff;
+    border-radius: 2px;
+    background-color: transparent;
+    font-weight: 500;
+}
+.row{
+    margin: 0;
+    padding: 0;
+}
+
+/* animations */
+
+@keyframes displayMenu{
+    from{
+        height: 0;
+    }
+    to{
+        height: 100.75px;
+    }
+}
+/* responsive settings */
+
+@media (max-width:768px) {
+    .nav-ul{
+        animation: .8s displayMenu;
+        animation-iteration-count: 1;
+        overflow: hidden;
+    }
+    div.home{
+        background-position: center;
+    }
+    div.home div.home-info{
+        margin-top: 120px;
+    }
+    div.social-icons{
+        margin: 30px 0;
+    }
+}

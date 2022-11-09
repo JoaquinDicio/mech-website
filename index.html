@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/759a8eedd2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <title>Car Mechanic</title>
+</head>
+<body class="bg-light" onload="init()">
+    <header id="header">
+        <nav class="d-flex justify-content-between align-items-center nav">
+            <h2 class="m-0">LOGO</h2>
+            <button id="menu-btn" class="d-block d-md-none btn btn-primary m-0">Menu</button>
+            <ul id="nav-ul" class="nav-ul w-100 col-md d m-0 d-md-flex d-none flex-md-row justify-content-center flex-column list-unstyled">
+                <li class="nav-item">Inicio</li>
+                <li class="nav-item">Servicios</li>
+                <li class="nav-item">Nuestro taller</li>
+                <li class="nav-item">Contacto</li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <div id="home" class="home d-flex justify-content-center container-fluid">
+            <div class="home-info">
+                <div class="home-card d-flex flex-column align-items-center align-items-md-start">
+                    <p class="red-color text-center text-md-start m-0">UN TALLER PARA TODOS LAS MARCAS Y MODELOS</p>
+                    <h2 class="text-center text-md-start">Reparacion y Service avanzado para vehiculos</h2>
+                    <button class="contact-btn m-0">Contactar</button>
+                </div>
+                <div class="d-flex align-items-center justify-content-center justify-content-md-start social-icons">
+                    <div>
+                        <h3 class="text-center">Nuestras redes</h3>
+                    </div>
+                    <div class="d-flex social-icons__container">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="services" class="services">
+            <div class="row services__header">
+                <div class="services__cols row col-lg-6">
+                    <div class="d-flex flex-column align-items-center justify-content-center services-col bg-orange col-sm-6">
+                        <h4 class="text-center">Servicios de mantenimiento</h4>
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, vitae!</p>
+                        <button class="button button-services-red">Ver mas</button>
+                    </div>
+                    <div class="services-img-1 col-sm-6">
+                        
+                    </div>
+                </div>
+                <div class="services__cols row flex-row-reverse flex-lg-row col-lg-6">
+                    <div class="d-flex flex-column align-items-center justify-content-center services-col bg-grey col-sm-6">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                        <h4 class="text-center">Reparaciones Certificadas</h4>
+                        <button class="button button-services-black">Ver mas</button>
+                    </div>
+                    <div class="services-img-2 col-sm-6">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="services__detail">
+                <div class="d-flex flex-column align-items-center services__detail-header">
+                    <h5 class="orange-color bold">QUE OFRECEMOS</h5>
+                    <h2 class="text-center grey-color bolder">Ofrecemos todos los servicios necesarios para tu auto.</h2>
+                </div>
+                <div class="w-100 services__detail-icons row">
+                    <div class="d-flex flex-column justify-content-center align-items-center services__detail-icon col-lg-4 col-sm-6 col-12">
+                        <i class="orange-color fa-solid fa-oil-can"></i>
+                        <h5 class="grey-color">Cambio aceite y filtros</h5>
+                        <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, consectetur?</p>
+                    </div>
+                    <div class="d-flex flex-column justify-content-center align-items-center services__detail-icon col-lg-4 col-sm-6 col-12">
+                        <i class="fa-solid fa-car-battery orange-color"></i>
+                        <h5 class="grey-color">Reemplazo de baterias</h5>
+                        <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, consectetur?</p>
+                    </div>
+                    <div class="d-flex flex-column justify-content-center align-items-center services__detail-icon col-lg-4 col-sm-6 col-12">
+                        <i class="fa-solid fa-gear orange-color"></i>
+                        <h5 class="grey-color">Transmision completa</h5>
+                        <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, consectetur?</p>
+                    </div>
+                    <div class="d-flex flex-column justify-content-center align-items-center services__detail-icon col-lg-4 col-sm-6 col-12">
+                        <i class="fa-solid fa-triangle-exclamation orange-color"></i>
+                        <h5 class="grey-color">Diagnostico y scanneo</h5>
+                        <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, consectetur?</p>
+                    </div>
+                    <div class="d-flex flex-column justify-content-center align-items-center services__detail-icon col-lg-4 col-sm-6 col-12">
+                        <i class="fa-solid fa-compact-disc orange-color"></i>
+                        <h5 class="grey-color">Cambio de frenos</h5>
+                        <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, consectetur?</p>
+                    </div>
+                    <div class="d-flex flex-column justify-content-center align-items-center services__detail-icon col-lg-4 col-sm-6 col-12">
+                        <i class="fa-solid fa-wrench orange-color"></i>
+                        <h5 class="grey-color">Manejo y suspension</h5>
+                        <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, consectetur?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
