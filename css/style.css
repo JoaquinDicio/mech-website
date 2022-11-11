@@ -7,9 +7,65 @@
     padding: 0;
     margin: 0;
 }
+a{
+    text-decoration: none;
+    color: #ffff;
+}
+a:hover{
+    color: #ffff;
+}
 p,h1,h2,h3,button,li,i{
     color: #FFFF;
 }
+
+/* utilities */
+.white-color{
+    color: #ffff;
+}
+.sm-font{
+    font-size: 1em;
+}
+.md-font{
+    font-size: 1.5em;
+}
+.big-font{
+    font-size: 2.2em;
+}
+.bolder{
+    font-weight: 1000;
+}
+.bold{
+    font-weight: 600;
+}
+.bg-orange{
+    background-color: #E53F29;
+}
+.bg-grey{
+    background-color: #1E1E1E;
+}
+.grey-color{
+    color: #1E1E1E !important;
+}
+.orange-color{
+    color: #E53F29;
+}
+.red-color{
+    color:#dc3545;
+}
+button.button{
+    padding: 7px 20px;
+    border: 2px solid #ffff;
+    border-radius: 2px;
+    background-color: transparent;
+    font-weight: 500;
+}
+.row{
+    margin: 0;
+    padding: 0;
+}
+
+
+
 
 /* HEADER AND NAV STYLES */
 header{
@@ -88,12 +144,12 @@ div.social-icons{
 div.social-icons h3{
     font-size: 1.2em;
 }
-div.social-icons i.fa-brands{
+i.fa-brands{
     font-size: 2.1em;
     margin: 0px 5px 5px 5px;
     cursor: pointer;
 }
-div.social-icons i.fa-brands:hover{
+i.fa-brands:hover{
     transition: .5s;
     color: #dc3545;
 }
@@ -172,39 +228,111 @@ div.services__detail-icons p{
     color: #a9a9a9;
 }
 
+/* TALLER SECTION */
+div.taller{
+    min-height: 700px;
+    margin-top: 40px;
+    padding: 60px 0px;
+}
+div.taller__info-container{
+    max-width: 1200px;
+    width: 100%;
+    padding: 70px 45px;
+    min-height: 550px;
+    background-color: #ffff;
+    border-radius: 5px;
+}
+div.taller__info-left{
+    margin-right: 20px;
+}
+div.taller__info-left h5{
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+div.taller__info-left p{
+    max-width: 90%;
+    text-align: justify;
+}
+div.taller__info-item{
+    padding: 10px;
+}
+div.taller__info-img{
+    border-radius: 5px;
+    background-color: black;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-position: top;
+    background-size: cover;
+}
+div.taller__info-item:nth-child(1)>div {
+    background-image: url('https://st.depositphotos.com/1000291/1886/i/450/depositphotos_18867983-stock-photo-auto-mechanic-at-car-suspension.jpg');
+}
+div.taller__info-item:nth-child(2)>div {
+    background-image:url('https://limasabe.pe/wp-content/uploads/2021/10/talleres-mecanicos-en-lima.jpeg');
+}
+div.taller__info-item:nth-child(3)>div{
+    background-image: url('https://blog.reparacion-vehiculos.es/hubfs/Taller%20mecanico.jpg');
+    background-position: left;
+}
+div.taller__info-item:nth-child(4)>div{
+    background-image: url('https://www.todomecanica.com/images/blog/2017/febrero/buen-mecanico.jpg');
+    background-position: center;
+}
 
-/* utilities */
-.bolder{
-    font-weight: 1000;
-}
-.bold{
-    font-weight: 600;
-}
-.bg-orange{
+div.taller__info-img div.taller__info-imgDetail{
+    height: 70px;
+    width: 100%;
     background-color: #E53F29;
+    margin-left: 10px;
+    border-radius: 3px;
+    margin-bottom: 20px;
 }
-.bg-grey{
-    background-color: #1E1E1E;
+
+div.taller__numbers{
+    margin-top: 70px;
+    margin-bottom: 40px;
+    max-width: 340px;
 }
-.grey-color{
-    color: #1E1E1E !important;
-}
-.orange-color{
-    color: #E53F29;
-}
-.red-color{
-    color:#dc3545;
-}
-button.button{
-    padding: 7px 20px;
-    border: 2px solid #ffff;
-    border-radius: 2px;
-    background-color: transparent;
-    font-weight: 500;
-}
-.row{
-    margin: 0;
+div.number{
     padding: 0;
+}
+div.taller__numbers p{
+    margin: 0 auto;
+    line-height: 1;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+div.taller button.button.button-taller{
+    border-radius: 5px;
+    width: 100%;
+    max-width: 700px;
+    margin:60px auto;
+    background-color: #E53F29;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+div.taller button.button.button-taller:hover{
+    transition: .5s;
+    background-color: transparent;
+    border: 2px solid #E53F29;
+    color: #E53F29;
+    font-weight: bold;
+}
+/* FOOTER SECTION */
+footer.footer{
+    padding: 10px 30px 60px 30px;
+    min-height: 300px;
+}
+div.footer__col{
+    margin-top: 50px;
+}
+div.contacto.social-icons__container i{
+    font-size: 1.9em;
+    margin-top: 4px;
 }
 
 /* animations */

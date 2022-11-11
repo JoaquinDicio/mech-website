@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,16 +12,18 @@
     <script src="./js/main.js"></script>
     <title>Car Mechanic</title>
 </head>
+
 <body class="bg-light" onload="init()">
     <header id="header">
         <nav class="d-flex justify-content-between align-items-center nav">
             <h2 class="m-0">LOGO</h2>
             <button id="menu-btn" class="d-block d-md-none btn btn-primary m-0">Menu</button>
-            <ul id="nav-ul" class="nav-ul w-100 col-md d m-0 d-md-flex d-none flex-md-row justify-content-center flex-column list-unstyled">
-                <li class="nav-item">Inicio</li>
-                <li class="nav-item">Servicios</li>
-                <li class="nav-item">Nuestro taller</li>
-                <li class="nav-item">Contacto</li>
+            <ul id="nav-ul"
+                class="nav-ul w-100 col-md d m-0 d-md-flex d-none flex-md-row justify-content-center flex-column list-unstyled">
+                <li class="nav-item"><a href="#home">Inicio</a></li>
+                <li class="nav-item"><a href="#services-detail">Servicios</a></li>
+                <li class="nav-item"><a href="#taller">Nuestro Equipo</a></li>
+                <li class="nav-item"><a href="#footer">Contacto</a></li>
             </ul>
         </nav>
 
@@ -47,67 +50,169 @@
         <div id="services" class="services">
             <div class="row services__header">
                 <div class="services__cols row col-lg-6">
-                    <div class="d-flex flex-column align-items-center justify-content-center services-col bg-orange col-sm-6">
+                    <div
+                        class="d-flex flex-column align-items-center justify-content-center services-col bg-orange col-sm-6">
                         <h4 class="text-center">Servicios de mantenimiento</h4>
-                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, vitae!</p>
+                        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, vitae!
+                        </p>
                         <button class="button button-services-red">Ver mas</button>
                     </div>
                     <div class="services-img-1 col-sm-6">
-                        
+
                     </div>
                 </div>
                 <div class="services__cols row flex-row-reverse flex-lg-row col-lg-6">
-                    <div class="d-flex flex-column align-items-center justify-content-center services-col bg-grey col-sm-6">
+                    <div
+                        class="d-flex flex-column align-items-center justify-content-center services-col bg-grey col-sm-6">
                         <i class="fa-solid fa-screwdriver-wrench"></i>
                         <h4 class="text-center">Reparaciones Certificadas</h4>
                         <button class="button button-services-black">Ver mas</button>
                     </div>
                     <div class="services-img-2 col-sm-6">
-                        
+
                     </div>
                 </div>
             </div>
-            <div class="services__detail">
+            <div id="services-detail" class="services__detail">
                 <div class="d-flex flex-column align-items-center services__detail-header">
                     <h5 class="orange-color bold">QUE OFRECEMOS</h5>
-                    <h2 class="text-center grey-color bolder">Ofrecemos todos los servicios necesarios para tu auto.</h2>
+                    <h2 class="text-center grey-color bolder">Ofrecemos todos los servicios necesarios para tu auto.
+                    </h2>
                 </div>
                 <div class="w-100 services__detail-icons row">
-                    <div class="d-flex flex-column justify-content-center align-items-center services__detail-icon col-lg-4 col-sm-6 col-12">
+                    <div
+                        class="d-flex flex-column justify-content-center align-items-center services__detail-icon col-lg-4 col-sm-6 col-12">
                         <i class="orange-color fa-solid fa-oil-can"></i>
                         <h5 class="grey-color">Cambio aceite y filtros</h5>
-                        <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, consectetur?</p>
+                        <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure,
+                            consectetur?</p>
                     </div>
-                    <div class="d-flex flex-column justify-content-center align-items-center services__detail-icon col-lg-4 col-sm-6 col-12">
+                    <div
+                        class="d-flex flex-column justify-content-center align-items-center services__detail-icon col-lg-4 col-sm-6 col-12">
                         <i class="fa-solid fa-car-battery orange-color"></i>
                         <h5 class="grey-color">Reemplazo de baterias</h5>
-                        <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, consectetur?</p>
+                        <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure,
+                            consectetur?</p>
                     </div>
-                    <div class="d-flex flex-column justify-content-center align-items-center services__detail-icon col-lg-4 col-sm-6 col-12">
+                    <div
+                        class="d-flex flex-column justify-content-center align-items-center services__detail-icon col-lg-4 col-sm-6 col-12">
                         <i class="fa-solid fa-gear orange-color"></i>
                         <h5 class="grey-color">Transmision completa</h5>
-                        <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, consectetur?</p>
+                        <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure,
+                            consectetur?</p>
                     </div>
-                    <div class="d-flex flex-column justify-content-center align-items-center services__detail-icon col-lg-4 col-sm-6 col-12">
+                    <div
+                        class="d-flex flex-column justify-content-center align-items-center services__detail-icon col-lg-4 col-sm-6 col-12">
                         <i class="fa-solid fa-triangle-exclamation orange-color"></i>
                         <h5 class="grey-color">Diagnostico y scanneo</h5>
-                        <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, consectetur?</p>
+                        <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure,
+                            consectetur?</p>
                     </div>
-                    <div class="d-flex flex-column justify-content-center align-items-center services__detail-icon col-lg-4 col-sm-6 col-12">
+                    <div
+                        class="d-flex flex-column justify-content-center align-items-center services__detail-icon col-lg-4 col-sm-6 col-12">
                         <i class="fa-solid fa-compact-disc orange-color"></i>
                         <h5 class="grey-color">Cambio de frenos</h5>
-                        <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, consectetur?</p>
+                        <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure,
+                            consectetur?</p>
                     </div>
-                    <div class="d-flex flex-column justify-content-center align-items-center services__detail-icon col-lg-4 col-sm-6 col-12">
+                    <div
+                        class="d-flex flex-column justify-content-center align-items-center services__detail-icon col-lg-4 col-sm-6 col-12">
                         <i class="fa-solid fa-wrench orange-color"></i>
                         <h5 class="grey-color">Manejo y suspension</h5>
-                        <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, consectetur?</p>
+                        <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure,
+                            consectetur?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="taller" class=" bg-grey d-flex justify-content-center align-items-center taller" id="taller">
+            <div class="row taller__info-container">
+                <div class="taller__info-left col-lg-5">
+                    <H3 class="bolder m-0 grey-color big-font text-center text-md-start">Nuestro equipo.</H3>
+                    <h5 class="orange-color bold sm-font text-center text-md-start">PARA QUE TU AUTO ESTE EN BUENAS
+                        MANOS</h5>
+                    <p class="grey-color text-center text-md-start">Lorem dolor sit amet consectetur dolor sit amet
+                        consectetur adipisicing elit. Quidem, amet!</p>
+                    <div class="row taller__numbers">
+                        <div class="col-sm-6 number">
+                            <h5 class="m-0 orange-color bold md-font">+250</h5>
+                            <p class="bold grey-color">Vehiculos reparados</p>
+                        </div>
+                        <div class="col-sm-6 number">
+                            <h5 class="m-0 orange-color bold md-font">+250</h5>
+                            <p class="bold grey-color">Clientes satisfechos</p>
+                        </div>
+                        <div class="col-sm-6 number">
+                            <h5 class="m-0 orange-color bold md-font">+250</h5>
+                            <p class="bold grey-color">Vehiculos reparados</p>
+                        </div>
+                        <div class="col-sm-6 number">
+                            <h5 class="m-0 orange-color bold md-font">+6</h5>
+                            <p class="bold grey-color">Años de servicio</p>
+                        </div>
+                    </div>
+                    <button class="button button-taller bg-orange">¿Como llegar?</button>
+                </div>
+                <div class="col row">
+                    <div class="taller__info-item col-sm-6">
+                        <div class="taller__info-img">
+                            <div
+                                class="d-flex justify-content-center align-items-center bg-orange taller__info-imgDetail">
+                                <p class="m-0 text-center white-color">NOMBRE APELLIDO</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="taller__info-item col-sm-6">
+                        <div class="taller__info-img">
+                            <div
+                                class="d-flex justify-content-center align-items-center bg-orange taller__info-imgDetail">
+                                <p class="m-0 text-center white-color">NOMRBE APELLIDO</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="taller__info-item col-sm-6">
+                        <div class="taller__info-img">
+                            <div
+                                class="d-flex justify-content-center align-items-center bg-orange taller__info-imgDetail">
+                                <p class="m-0 text-center white-color">NOMBRE APELLIDO</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="taller__info-item col-sm-6">
+                        <div class="taller__info-img">
+                            <div
+                                class="d-flex justify-content-center align-items-center bg-orange taller__info-imgDetail">
+                                <p class="m-0 text-center white-color">NOMBRE APELLIDO</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    <footer>
+    <footer class="bg-grey footer m-0 d-flex justify-content-center">
+        <div class="row d-flex w-100 justify-content-between">
+            <div class="footer__col col-sm-4">
+                <h3 class="text-center white-color sm-font">Ponete en contacto</h1>
+                    <div class="m-0 d-flex justify-content-center contacto social-icons__container">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+            </div>
+            <div class="footer__col col-sm-4">
+                <h3 class="text-center white-color sm-font">Seguinos en redes</h1>
+                <div class="contacto social-icons__container d-flex justify-content-center">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+            <div id="footer" class="footer__col col-sm-4">
+                <h3 class="text-center white-color sm-font">Veni a visitarnos</h1>
+                <p class="sm-font white-color text-center">Direccion falsa 123</p>
+            </div>
+        </div>
     </footer>
 </body>
+
 </html>
