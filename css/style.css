@@ -362,4 +362,18 @@ div.contacto.social-icons__container i{
     div.social-icons{
         margin: 30px 0;
     }
+    div.taller__info-left p.grey-color{
+        max-width: none;
+    }
+}
+@media (max-width:425px) {
+    p,h5{
+        font-size: 1em;
+    }
+    h2,h3{
+        font-size: 1.5em !important;
+    }
+    h2.title{
+        font-size: 1.8em !important;
+    }
 }
