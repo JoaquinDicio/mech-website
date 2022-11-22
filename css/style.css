@@ -64,7 +64,29 @@ button.button{
     padding: 0;
 }
 
-
+/* WHATSAPP FIXED BUTTON */
+div.whatsapp-container{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    background-color:  #00bb2d;
+    margin: 20px;
+}
+div.whatsapp-container i.fa-brands.fa-whatsapp.fixed{
+    font-size: 2.6em;
+    margin: 0;
+    padding: 0;
+}
+div.whatsapp-container:hover{
+    background-color: #ffff;
+    transition: .4s;
+}
+div.whatsapp-container:hover i.fa-brands.fa-whatsapp.fixed{
+    color:  #00bb2d;
+}
 
 
 /* HEADER AND NAV STYLES */
@@ -370,10 +392,13 @@ div.contacto.social-icons__container i{
     p,h5{
         font-size: 1em;
     }
+    h3.our-media{
+        font-size: 1.3em !important;
+    }
     h2,h3{
-        font-size: 1.5em !important;
+        font-size: 1.4em !important;
     }
     h2.title{
-        font-size: 1.8em !important;
+        font-size: 1.75em !important;
     }
 }
